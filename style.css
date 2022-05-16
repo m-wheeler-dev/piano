@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* {
+    font-family: 'Quicksand', 'Monospace';
+}
+
+body {
+    background: url('piano-background.jpg');
+    background-size: fill;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: fill;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-weight: bold;
+    color: darkorange;
+    text-shadow: 0 0 0.5rem black;
+    font-size: 3rem;
+}
+
+.keys {
+    height: 30rem;
+    width: 80%;
+    margin: 2rem auto;
+    box-shadow: 0 0 1rem 0.5rem rgb(0, 0, 0);
+    border-radius: 25px;
+    border-top: 0.2rem solid rgba(255, 255, 255, 0.3);
+    border-bottom:  0.2rem solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding: 0.7rem;
+    font-size: 2rem;
+    margin: 2%;
+    height: 60%;
+    width: 10%;
+    cursor: pointer;
+}
+
+button:nth-of-type(even) {
+    background-color: black;
+    color: whitesmoke;
+}
+
+button:focus {
+    outline: transparent;
+}
+
+button:active, button.activated {
+    transform: scale(0.95);
+    box-shadow: 0 0 1rem 0.5rem darkorange;
+}
+
+footer {
+    color: darkorange;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-shadow: 0 0 0.3rem black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div {
+    align-self: center;
+    margin: 2% auto;
+}
+
+
+@media(max-width: 1000px) {
+    .keys {
+        width: 90%;
+        height: 20rem;
+    }
+    
+}
