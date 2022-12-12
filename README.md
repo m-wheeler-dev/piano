@@ -7,4 +7,4 @@ One of my first interactive projects, it has since been modified to function and
 
 The primary struggle I had with this project was learning how to get everything to activate when the keys were pressed on the keyboard. Before this, all of my event listener / handling experience was with clicking. The original thought and first draft was thanks to a guided tutorial, but I then built it on my own afterwards as I wanted to learn and comprehend as much as I could. 
 
-~Thank you
+~ M
