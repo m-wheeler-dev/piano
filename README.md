@@ -1,10 +1,7 @@
-Sounds and visual effects activate when a key is clicked or the matching key on your keyboard is pressed. 
-(Tapping on keys works as clicking for touch screen users)
+<h1>Playable Piano</h1>
+<h3>(Works with key presses and clicks)</h3>
 
-Built using HTML, CSS, and Vanilla JavaScript
+<img width="500" alt="Screenshot 2023-12-19 at 9 10 07 PM" src="https://github.com/m-wheeler-dev/piano/assets/105622101/83123bf5-a391-4973-8fd1-d49b06def712">
 
-One of my first interactive projects, it has since been modified to function and scale properly on mobile devices. 
-
-The primary struggle I had with this project was learning how to get everything to activate when the keys were pressed on the keyboard. Before this, all of my event listener / handling experience was with clicking. The original thought and first draft was thanks to a guided tutorial, but I then built it on my own afterwards as I wanted to learn and comprehend as much as I could. 
-
-~ M
+<p>Sounds and visual effects activate when a key is clicked or the matching key on your keyboard is pressed.</p>
+<p>(Tapping on keys works as clicking for touch screen users)</p>
