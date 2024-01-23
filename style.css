@@ -1,86 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 
 * {
-    font-family: 'Quicksand', 'Monospace';
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Quicksand", "Monospace";
 }
 
 body {
-    background: url('piano-background.jpg');
-    background-size: fill;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: fill;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	height: 100vh;
+	width: 100vw;
+	background: url("images/piano-bg.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	overflow: hidden;
 }
 
-.title {
-    font-weight: bold;
-    color: darkorange;
-    text-shadow: 0 0 0.5rem black;
-    font-size: 3rem;
+h1 {
+	margin: 4rem 0;
+	text-align: center;
+	font-size: 3rem;
+	color: #00ffff;
+	text-shadow: 0 0 0.4rem #00ffff;
+	letter-spacing: 2px;
 }
 
-.keys {
-    height: 30rem;
-    width: 80%;
-    margin: 2rem auto;
-    box-shadow: 0 0 1rem 0.5rem rgb(0, 0, 0);
-    border-radius: 25px;
-    border-top: 0.2rem solid rgba(255, 255, 255, 0.3);
-    border-bottom:  0.2rem solid rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(5px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#piano {
+	height: 30rem;
+	width: 80%;
+	margin: 2rem auto;
+	border-radius: 0.5rem;
+	border: 0.2rem solid #ffffff30;
+	box-shadow: 0 0 0.5rem 0.25rem #ff008c;
+	backdrop-filter: blur(3px);
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
 }
 
 button {
-    padding: 0.7rem;
-    font-size: 2rem;
-    margin: 2%;
-    height: 60%;
-    width: 10%;
-    cursor: pointer;
+	height: 70%;
+	width: 10%;
+	font-size: 2rem;
+	color: #00ffff;
+	background-color: #ff008c;
+	border: 2px solid #00ffff;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	transition: all 0.1s linear;
 }
 
 button:nth-of-type(even) {
-    background-color: black;
-    color: whitesmoke;
+	color: #ff008c;
+	background-color: #00ffff;
+	border: 2px solid #ff008c;
 }
 
 button:focus {
-    outline: transparent;
+	outline: transparent;
 }
 
-button:active, button.activated {
-    transform: scale(0.95);
-    box-shadow: 0 0 1rem 0.5rem darkorange;
+button:active,
+button.activated {
+	transform: scale(0.95);
+	box-shadow: 0 0 0.5rem 0.5rem #ff008c;
 }
 
-footer {
-    color: darkorange;
-    font-size: 2rem;
-    font-weight: bold;
-    letter-spacing: 0.1rem;
-    text-shadow: 0 0 0.3rem black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+@media (max-width: 700px) {
+	#piano {
+		width: 90%;
+		height: 20rem;
+		flex-wrap: wrap;
+	}
 
-footer div {
-    align-self: center;
-    margin: 2% auto;
-}
-
-
-@media(max-width: 1000px) {
-    .keys {
-        width: 90%;
-        height: 20rem;
-    }
-    
+	button {
+		height: 40%;
+		width: 22%;
+		font-size: 1rem;
+	}
 }
