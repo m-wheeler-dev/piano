@@ -6,3 +6,5 @@
 
 <p>Sounds and visual effects activate when a key is clicked or the matching key on your keyboard is pressed.</p>
 <p>(Tapping on keys works as clicking for touch screen users)</p>
+
+<a href="https://mattwheeler-dev.github.io/piano/" target="_blank">Test it out live here</a>
